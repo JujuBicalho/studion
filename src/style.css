@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');
 
 * {
    box-sizing: border-box;
    }
 
 ::root {
+    --color-primary: #ffc500;
     font-family: 'Montserrat', sans-serif;
     font-size:16px;
     }
@@ -19,10 +20,6 @@ ul {
     padding-left: 0;
 }
 
-li{
-    margin-right: 0.62rem;
-   
-}
 .navbar {
     position: fixed;
     display: grid;
@@ -38,12 +35,37 @@ li{
 
 .navbar__links {
     justify-self: end;
+    
+}
 
+.navbar__links li{
+    font-size: 0.875rem;
+    margin-right: 3rem;
+    text-transform: uppercase;
+   
 }
 
 .navbar__links a {
+    font-weight: 300;
     color: #FFF;
     text-decoration: none;
+}
 
+.navbar__links a:hover {
+    color: #ffc500;
+}
 
+.logo-studion {
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.logo-studion__subtitle {
+    font-size: 0.875rem;
+    font-weight: 300;
+    float: right;
+}
+
+.copy-primary {
+    color: #ffc500;
 }
