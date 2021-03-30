@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/brands.min.css');
 
 * {
    box-sizing: border-box;
@@ -86,6 +88,7 @@ ul {
 .logo-studion__subtitle {
     font-size: 0.875rem;
     font-weight: 300;
+    color: #fff;
 }
 
 .copy-primary {
@@ -232,11 +235,12 @@ ul {
       justify-items: end;
       min-height: 80vh;
       margin: 1.25 0rem;
+      padding:0rem;
     }
 
 .quote__copy{
     background-color: #fff;;
-    padding: 5.625rem 4.375rem;
+    padding: 2.5rem 2.5rem;
     }
 
  .quote__copy h6 {
@@ -246,7 +250,7 @@ ul {
      line-height: 1.4375rem;
      width: 54ch;
      text-transform: uppercase;
-     margin: 0;
+     padding:1rem;
 
   }
 
@@ -255,15 +259,66 @@ ul {
       line-height: 5rem;;
       text-transform: uppercase;
       letter-spacing: -0.1875rem ;
-      margin-top: 1.875rem;;
+      margin: 1.875rem;
     }
 
 .quote__copy h2 span {
-    display: block;
-    color: var(--color-primary);
+    display: block;        
   }  
 
 .quote__copy h2 span {
     display: block;
     color: var(--color-primary);
   }
+
+.btn--quote {
+      color: var(--color-copy);
+      border-color: var(--color-copy);
+      background: unset;
+      hover: var(--default-padding);
+      
+  }
+
+.footer {
+      background-color: #000;
+      color: #FFF;
+      padding: 0 1rem;
+}
+
+.footer__container {
+      display: grid;
+      grid-template-columns: repeat(3,auto);
+      align-items: center;
+      padding: 5.25rem 0 3.75rem 0;
+}
+
+.footer__logo-studion {
+    justify-self: left;
+    text-transform: uppercase;
+    font-size: 2.375rem;
+    font-weight: 900;
+    line-height: 1ch;
+    margin: 0 1 rem;
+   
+}
+
+.logo-studion__subtitle {
+    display: block;
+    
+    
+}
+.footer___form {
+    justify-self: center;
+
+    display: grid;
+    place-items: center;
+    grid-template-columns: 5.625rem auto;   
+}
+
+.footer__icons {
+    justify-self: right;
+}
+
+.footer__direitos {
+    align-items: center;
+}
