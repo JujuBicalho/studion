@@ -273,7 +273,9 @@ ul {
   color: var(--color-copy);
   border-color: var(--color-copy);
   background: unset;
-  hover: var(--default-padding);
+}
+.btn--quote:hover{
+    background: var(--default-padding); ;
 }
 
 .footer {
