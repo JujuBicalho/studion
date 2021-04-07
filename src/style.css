@@ -274,8 +274,9 @@ ul {
   border-color: var(--color-copy);
   background: unset;
 }
-.btn--quote:hover{
-    background: var(--default-padding); ;
+
+.btn--quote:hover {
+  background: var(--default-padding);
 }
 
 .footer {
@@ -289,6 +290,11 @@ ul {
   grid-template-columns: repeat(3, auto);
   align-items: center;
   padding: 5.25rem 0 3.75rem 0;
+
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+  padding: 2.25rem 0 2.75rem 0;
 }
 
 .footer__logo-studion {
@@ -302,16 +308,27 @@ ul {
 .logo-studion__subtitle {
   display: block;
 }
+
 .footer__form {
-    display:flex;
-    align-items: center;
-    flex-direction: row !important;
-    gap: 1.25rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row !important;
+  gap: 1.25rem;
 }
 
 .footer__form fieldset {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+}
+.footer___form {
+  justify-self: center;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 10ch auto;
+  gap: 1.25rem;
+}
+
+.footer__form fieldset {
   border: unset;
   margin: 0;
   padding: 0;
@@ -323,8 +340,10 @@ ul {
   background-color: var(--color-primary);
   border: unset;
   padding: 1rem;
+
   margin: 0.5625rem;
 }
+
 .footer__label {
   font-size: 0.875rem;
   font-weight: 300;
@@ -337,4 +356,14 @@ ul {
 
 .footer__direitos {
   align-items: center;
+}
+
+.footer__form button {
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+
+.footer__form button:hover {
+  background-color: #000;
+  color: #fff;
 }
