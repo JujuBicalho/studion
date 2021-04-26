@@ -27,6 +27,8 @@ footer {
   overflow-x: hidden;
 }
 
+/*HEADER*/
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
@@ -153,10 +155,13 @@ ul {
   color: #fff;
 }
 
+/*MAIN*/
+
 #counter {
   background-color: var(--color-primary);
   color: #fff;
   text-transform: uppercase;
+  
 }
 
 .counter__container {
@@ -280,6 +285,9 @@ ul {
      background: var(--color-copy);
  }
 
+
+ /*FOOTER*/
+
 .footer {
     background-color: #000;
     color: #fff;
@@ -317,9 +325,7 @@ ul {
     align-items: center;
 }
 
-.footer__form input {
-    width: 100%;
-    height: 2.875rem;
+.footer__form input {    
     background-color: var(--color-primary);
     font-size: .875rem;
     font-weight: 700;
@@ -333,6 +339,9 @@ ul {
     color: #000;
   }
 
+  .footer__form input:focus {
+      outline: unset;
+  }
   
 .footer__label {
     font-size: 0.875rem;
@@ -343,19 +352,22 @@ ul {
 
 .footer__form button {
     cursor:pointer;
-    transition: 0.3s all ease;
+    transition: 0.3s all ease;  
+    height: 100%;   
     
 }
 
 .footer__form__email {
     display: grid;
     grid-template-columns: auto 3.375rem;
+    border:unset;
+    width: 100%;
 }
 
 
 .footer__form button:hover {
-    background-color: #000;
     color:#fff;
+    background-color: var(--color-copy);
 }
 
 .footer__direitos {
@@ -383,6 +395,9 @@ ul {
   color: #000;
 }
 
+.footer__icons .fa-youtube {
+  color: #000;
+}
 .footer p {
     margin: 2.5rem 0;
 }
@@ -442,6 +457,11 @@ ul {
 }
 
 .footer__form button:hover {
-  background-color: #000;
+  background-color: var(--color-copy);
   color: #fff;
 }
+
+.footer hr {
+    border-color: #fff4;
+}
+
